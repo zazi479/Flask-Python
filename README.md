@@ -323,3 +323,52 @@ Puede ejecutar la aplicación en este punto, pero debido a que no ha utilizado l
 },
   
 ```
+    
+    
+Guarde el html.jsonarchivo ( Ctrl+S ).
+
+Ahora, siempre que comience a escribir el prefijo del fragmento, como flext, VS Code proporciona el fragmento como una opción de autocompletar, como se muestra en la siguiente sección. También puede usar el comando Insertar fragmento para elegir un fragmento de un menú.
+
+Para obtener más información sobre fragmentos de código en general, consulte Creación de fragmentos .
+
+    
+    
+#   Use el fragmento de código para agregar páginas
+    
+Con el fragmento de código en su lugar, puede crear rápidamente plantillas para las páginas Inicio, Acerca de y Contacto.
+
+1.  En la templates carpeta, cree un nuevo archivo llamado home.html, luego comience a escribir flextpara ver que el fragmento aparece como una finalización:
+    
+    Cuando selecciona la finalización, el código del fragmento aparece con el cursor en el punto de inserción del fragmento:
+    
+![](Cuando selecciona la finalización, el código del fragmento aparece con el cursor en el punto de inserción del fragmento:)
+    
+2.   En el punto de inserción en el bloque "título", escriba Homey en el bloque "contenido", escriba <p>Home page for the Visual Studio Code Flask tutorial.</p>y luego guarde el archivo. Estas líneas son las únicas partes únicas de la plantilla de página extendida:
+
+![](https://github.com/zazi479/Flask-Python/blob/d9c7a67faf6a7c24961116a9f004cd4200400d0f/fotos%20flask/home.png)
+    
+3.  En la templates carpeta, cree about.html, use el fragmento para insertar el marcado repetitivo, inserte About usy <p>About page for the Visual Studio Code Flask tutorial.</p>en los bloques "título" y "contenido", respectivamente, luego guarde el archivo.
+  
+![](https://github.com/zazi479/Flask-Python/blob/d9c7a67faf6a7c24961116a9f004cd4200400d0f/fotos%20flask/about.png)
+
+4.  Repita el paso anterior para crear templates/contact.html usando Contact usy <p>Contact page for the Visual Studio Code Flask tutorial.</p>en los dos bloques de contenido.
+ 
+![](https://github.com/zazi479/Flask-Python/blob/d9c7a67faf6a7c24961116a9f004cd4200400d0f/fotos%20flask/contact.png)
+    
+5.  En app.py, agregue funciones para las rutas /about/ y /contact/ que hacen referencia a sus respectivas plantillas de página. También modifique la homefunción para usar la home.htmlplantilla.
+    
+ ![](https://github.com/zazi479/Flask-Python/blob/d9c7a67faf6a7c24961116a9f004cd4200400d0f/fotos%20flask/app.png)
+    
+    
+    
+#   Ejecute la aplicación
+Con todas las plantillas de página en su lugar, guarde app.py, ejecute la aplicación y abra un navegador para ver los resultados. Navegue entre las páginas para verificar que las plantillas de página están ampliando correctamente la plantilla base.
+    
+ ![](https://github.com/zazi479/Flask-Python/blob/6596c845b0a125e4350543d141b3cb47ecab82d6/fotos%20flask/final.png)
+    
+    
+ **Nota : si no ve los cambios más recientes, es posible que deba actualizar la página para evitar ver un archivo en caché.**
+    
+    He reiniciado el servidor Flask, el VisualStudio,el navegador y he probado en varios navegadores distintos y no me funciona da el siguiente error.
+    
+![](https://github.com/zazi479/Flask-Python/blob/6596c845b0a125e4350543d141b3cb47ecab82d6/fotos%20flask/error.png)
