@@ -216,14 +216,14 @@ El segundo tipo son aquellos que desea abordar en el código, como cuando desea 
     
 2.  Dentro de la staticcarpeta, cree un archivo site.csscon el siguiente contenido. Después de ingresar este código, observe también el resaltado de sintaxis que           proporciona VS Code para los archivos CSS, incluida una vista previa en color:
     
-    ```
+```
     .message {
     font-weight: 600;
     color: blue;
 }
-   ```
+```
     
-    
+ 
 3.  En templates/hello_there.html, agregue la siguiente línea antes de la </head>etiqueta, lo que crea una referencia a la hoja de estilo.3.    
     
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
