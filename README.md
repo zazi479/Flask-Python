@@ -174,4 +174,10 @@ varias páginas para la aplicación, cada una de las cuales contiene una barra d
 </html>
     
 ```
+ 
+
+3.    En app.py, importe render_templatela función de Flask cerca de la parte superior del archivo:
     
+    -   from flask import render_template
+ 
+4.  También en app.py, modifique la hello_therefunción a usar render_templatepara cargar una plantilla y aplicar los valores con nombre (y agregue una ruta para            reconocer el caso sin nombre). render_templateasume que el primer argumento es relativo a la templatescarpeta. Por lo general, los desarrolladores nombran las          plantillas de la misma manera que las funciones que las usan, pero no se requieren nombres coincidentes porque siempre se hace referencia al nombre de archivo          exacto en su código.
