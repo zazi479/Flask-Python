@@ -36,6 +36,7 @@ python -m pip install flask
 ```
 
 ![](https://github.com/zazi479/Flask-Python/blob/a013533501f504b6faebdb5212853517956b0626/foto3.png)
+
 Ahora tiene un entorno autónomo listo para escribir código Flask. VS Code activa el entorno automáticamente cuando usa Terminal: Create New Terminal . Si abre un símbolo del sistema o terminal independiente, active el entorno ejecutando source .venv/bin/activate(Linux/macOS) o .venv\Scripts\Activate.ps1(Windows). Sabrá que el entorno está activado cuando el símbolo del sistema muestra (.venv) al principio.
 
 1. Cree y ejecute una aplicación Flask mínima
@@ -46,19 +47,26 @@ Ahora tiene un entorno autónomo listo para escribir código Flask. VS Code acti
 
 2. En app.py, agregue código para importar Flask y cree una instancia del objeto Flask. Si escribe el código a continuación (en lugar de usar copiar y pegar), puede      observar el IntelliSense y las funciones de autocompletado de VS Code :
 
-```
-from flask import Flask
-app = Flask(__name__)
-```
+![](https://github.com/zazi479/Flask-Python/blob/b181e98dd1ccc26982a9b673a4aefee08441a554/foto4.png)
 
 3.  También en app.py, agregue una función que devuelva contenido, en este caso una cadena simple, y use el app.routedecorador de Flask para asignar la ruta URL /a esa     función:
-```
-@app.route("/")
-def home():
-    return "Hello, Flask!"
-```
+
+![](https://github.com/zazi479/Flask-Python/blob/b181e98dd1ccc26982a9b673a4aefee08441a554/foto5.png)
 
 4.  Guarde el app.pyarchivo ( Ctrl+S ).
 
 5.  En la Terminal integrada, ejecute la aplicación ingresando python -m flask run, que ejecuta el servidor de desarrollo de Flask. El servidor de desarrollo busca         app.pypor defecto. Cuando ejecuta Flask, debería ver un resultado similar al siguiente:
+
+Si ve un error que indica que no se puede encontrar el módulo Flask, asegúrese de haberlo ejecutado python -m pip install flasken su entorno virtual como se describe al final de la sección anterior.
+
+Además, si desea ejecutar el servidor de desarrollo en una dirección IP o puerto diferente, use los argumentos de línea de comandos de host y puerto, como con --host=0.0.0.0 --port=80.
+
+6.  Para abrir su navegador predeterminado en la página renderizada, presione Ctrl y haga clic en la http://127.0.0.1:5000/URL en la terminal.
+
+![](https://github.com/zazi479/Flask-Python/blob/b181e98dd1ccc26982a9b673a4aefee08441a554/foto6.png)
+
+7.  Observe que cuando visita una URL como /, aparece un mensaje en la terminal de depuración que muestra la solicitud HTTP:
+
+![](https://github.com/zazi479/Flask-Python/blob/2261989c997423bbc0f7ed06a2c1ba6f95c7c9dd/foto7.png)
+
 
