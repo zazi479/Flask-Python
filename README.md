@@ -23,7 +23,7 @@ Abra esta carpeta en VS Code navegando a la carpeta en un terminal y ejecutando 
 
 En VS Code, abra la Paleta de comandos ( Ver > Paleta de comandos o ( Ctrl+Shift+P )). Luego seleccione el comando Python: Create Environment para crear un entorno virtual en su espacio de trabajo. Seleccione venvy luego el entorno de Python que desea usar para crearlo.
 
-![](https://github.com/zazi479/Flask-Python/blob/e139a3b441d5f3641006c4e0f014fea0abd64fea/foto1.png)
+    ![](https://github.com/zazi479/Flask-Python/blob/e139a3b441d5f3641006c4e0f014fea0abd64fea/foto1.png)
 
 4.  Una vez completada la creación de su entorno virtual, ejecute Terminal: Crear nueva terminal ( Ctrl+Shift+` )) desde la Paleta de comandos, que crea una terminal y activa automáticamente el entorno virtual ejecutando su secuencia de comandos de activación.
 
@@ -35,23 +35,23 @@ En VS Code, abra la Paleta de comandos ( Ver > Paleta de comandos o ( Ctrl+Shift
 python -m pip install flask
 ```
 
-![](https://github.com/zazi479/Flask-Python/blob/a013533501f504b6faebdb5212853517956b0626/foto3.png)
+    ![](https://github.com/zazi479/Flask-Python/blob/a013533501f504b6faebdb5212853517956b0626/foto3.png)
 
 Ahora tiene un entorno autónomo listo para escribir código Flask. VS Code activa el entorno automáticamente cuando usa Terminal: Create New Terminal . Si abre un símbolo del sistema o terminal independiente, active el entorno ejecutando source .venv/bin/activate(Linux/macOS) o .venv\Scripts\Activate.ps1(Windows). Sabrá que el entorno está activado cuando el símbolo del sistema muestra (.venv) al principio.
 
 1. Cree y ejecute una aplicación Flask mínima
     En VS Code, cree un archivo nuevo en la carpeta de su proyecto con el nombre app.pyArchivo > Nuevo en el menú, presione Ctrl+N o use el ícono de archivo nuevo en       la Vista del explorador (que se muestra a continuación).
 
-![](https://github.com/zazi479/Flask-Python/blob/ba6fad39d9c1096f329d3317f621f77877728f5c/foto2.png)
+    ![](https://github.com/zazi479/Flask-Python/blob/ba6fad39d9c1096f329d3317f621f77877728f5c/foto2.png)
 
 
 2. En app.py, agregue código para importar Flask y cree una instancia del objeto Flask. Si escribe el código a continuación (en lugar de usar copiar y pegar), puede      observar el IntelliSense y las funciones de autocompletado de VS Code :
 
-![](https://github.com/zazi479/Flask-Python/blob/b181e98dd1ccc26982a9b673a4aefee08441a554/foto4.png)
+    ![](https://github.com/zazi479/Flask-Python/blob/b181e98dd1ccc26982a9b673a4aefee08441a554/foto4.png)
 
 3.  También en app.py, agregue una función que devuelva contenido, en este caso una cadena simple, y use el app.routedecorador de Flask para asignar la ruta URL /a esa     función:
 
-![](https://github.com/zazi479/Flask-Python/blob/b181e98dd1ccc26982a9b673a4aefee08441a554/foto5.png)
+    ![](https://github.com/zazi479/Flask-Python/blob/b181e98dd1ccc26982a9b673a4aefee08441a554/foto5.png)
 
 4.  Guarde el app.pyarchivo ( Ctrl+S ).
 
@@ -63,11 +63,11 @@ Además, si desea ejecutar el servidor de desarrollo en una dirección IP o puer
 
 6.  Para abrir su navegador predeterminado en la página renderizada, presione Ctrl y haga clic en la http://127.0.0.1:5000/URL en la terminal.
 
-![](https://github.com/zazi479/Flask-Python/blob/b181e98dd1ccc26982a9b673a4aefee08441a554/foto6.png)
+    ![](https://github.com/zazi479/Flask-Python/blob/b181e98dd1ccc26982a9b673a4aefee08441a554/foto6.png)
 
 7.  Observe que cuando visita una URL como /, aparece un mensaje en la terminal de depuración que muestra la solicitud HTTP:
 
-![](https://github.com/zazi479/Flask-Python/blob/2261989c997423bbc0f7ed06a2c1ba6f95c7c9dd/foto7.png)
+    ![](https://github.com/zazi479/Flask-Python/blob/2261989c997423bbc0f7ed06a2c1ba6f95c7c9dd/foto7.png)
 
 8.  Detenga la aplicación usando Ctrl+C en la terminal.
 
@@ -78,7 +78,7 @@ La depuración le brinda la oportunidad de pausar un programa en ejecución en u
 
 1.  Reemplace el contenido de app.pycon el siguiente código, que agrega una segunda ruta y función que puede recorrer paso a paso en el depurador:
 
-![](https://github.com/zazi479/Flask-Python/blob/9f93e1cc82692fe733b4cb0bcffd98b86540a70f/foto8.png)
+    ![](https://github.com/zazi479/Flask-Python/blob/9f93e1cc82692fe733b4cb0bcffd98b86540a70f/foto8.png)
 
 El decorador utilizado para la nueva ruta URL, /hello/<name>define un punto final /hola/ que puede aceptar cualquier valor adicional. El identificador dentro <y >en la ruta define una variable que se pasa a la función y se puede usar en su código.
 
@@ -99,10 +99,19 @@ Las rutas URL distinguen entre mayúsculas y minúsculas. Por ejemplo, la ruta /
 
 4.  Debe de aparecer el archivo con este contenido:
     
-![](https://github.com/zazi479/Flask-Python/blob/03d5197dd281f62f7ea12180b1a473bc51853304/foto11.png)
+    ![](https://github.com/zazi479/Flask-Python/blob/03d5197dd281f62f7ea12180b1a473bc51853304/foto11.png)
     
 5.  Guardar launch.json( Ctrl+S ). En la lista desplegable de configuración de depuración, seleccione Python: Configuración de matraz.
 
     ![](![image](https://user-images.githubusercontent.com/114684585/235234697-50b65ce3-cb9d-425f-85b1-c24dad5199d1.png)
     
+    
+   Observe que la barra de estado cambia de color para indicar la depuración:
+    
+   ![image](https://user-images.githubusercontent.com/114684585/235235506-d272a2d8-3ff4-4ffc-95cc-7307e906fa5e.png)
+    
+    En mi caso no funciona.
+    
+   
+
     
