@@ -222,21 +222,24 @@ El segundo tipo son aquellos que desea abordar en el código, como cuando desea 
 }
    ```
     
+    
 3.  En templates/hello_there.html, agregue la siguiente línea antes de la </head>etiqueta, lo que crea una referencia a la hoja de estilo.3.    
     
-    ```
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
-    ```
+```
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
+   
+```
     
 4.  También en templates/hello_there.html, reemplace el <body>elemento de contenido con el siguiente marcado que usa el messageestilo en lugar de una <strong>etiqueta      (y también muestra un mensaje si solo usa un hola/URL sin nombre):
     
-   ```
+```
     {%if name %}
     <span class="message">Hello there, {{ name }}!</span> It's {{ date.strftime("%A, %d %B, %Y at %X") }}.
 {% else %}
     <span class="message">What's your name? Provide it after /hello/ in the URL.</span>
 {% endif %}
-    ```
+    
+```
     
  5. Ejecute la aplicación, navegue a una URL /hola/nombre y observe que el mensaje se muestra en azul. Detenga la aplicación cuando haya terminado
     
