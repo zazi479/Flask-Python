@@ -108,7 +108,7 @@ Las rutas URL distinguen entre mayúsculas y minúsculas. Por ejemplo, la ruta /
     
    Observe que la barra de estado cambia de color para indicar la depuración:
     
-   ![image](https://user-images.githubusercontent.com/114684585/235235506-d272a2d8-3ff4-4ffc-95cc-7307e906fa5e.png)
+   ![](https://github.com/zazi479/Flask-Python/blob/0a6e74433da014a1ae07ff09cad039454f93166b/fooo1.png)
     
  En mi caso no funciona.
     
@@ -121,7 +121,7 @@ Las rutas URL distinguen entre mayúsculas y minúsculas. Por ejemplo, la ruta /
     
 Mota: es como deberia de aparecer.  
     
-    ![image](https://user-images.githubusercontent.com/114684585/235235995-c44d8200-952f-4a60-8b65-ef4a6eb49c18.png)
+    ![](https://github.com/zazi479/Flask-Python/blob/0a6e74433da014a1ae07ff09cad039454f93166b/fotooo1.png)
 
 9.  Use Step Over para ejecutar la now = datetime.now()declaración.
 
@@ -132,6 +132,10 @@ Mota: es como deberia de aparecer.
     
     
 11. Avance por algunas líneas más de código, si lo desea, luego seleccione Continuar ( F5 ) para dejar que el programa se ejecute. La ventana del navegador muestra el      resultado:
+    
+    ![](https://github.com/zazi479/Flask-Python/blob/d08ce91659dbb0bfc15a897be708ed192a999140/foto13.png)
+    
+    
     
    
 
