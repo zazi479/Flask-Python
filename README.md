@@ -35,4 +35,30 @@ En VS Code, abra la Paleta de comandos ( Ver > Paleta de comandos o ( Ctrl+Shift
 python -m pip install flask
 ```
 
+![](https://github.com/zazi479/Flask-Python/blob/a013533501f504b6faebdb5212853517956b0626/foto3.png)
+Ahora tiene un entorno autónomo listo para escribir código Flask. VS Code activa el entorno automáticamente cuando usa Terminal: Create New Terminal . Si abre un símbolo del sistema o terminal independiente, active el entorno ejecutando source .venv/bin/activate(Linux/macOS) o .venv\Scripts\Activate.ps1(Windows). Sabrá que el entorno está activado cuando el símbolo del sistema muestra (.venv) al principio.
+
+1. Cree y ejecute una aplicación Flask mínima
+    En VS Code, cree un archivo nuevo en la carpeta de su proyecto con el nombre app.pyArchivo > Nuevo en el menú, presione Ctrl+N o use el ícono de archivo nuevo en       la Vista del explorador (que se muestra a continuación).
+
+![](https://github.com/zazi479/Flask-Python/blob/ba6fad39d9c1096f329d3317f621f77877728f5c/foto2.png)
+
+
+2. En app.py, agregue código para importar Flask y cree una instancia del objeto Flask. Si escribe el código a continuación (en lugar de usar copiar y pegar), puede      observar el IntelliSense y las funciones de autocompletado de VS Code :
+
+```
+from flask import Flask
+app = Flask(__name__)
+```
+
+3.  También en app.py, agregue una función que devuelva contenido, en este caso una cadena simple, y use el app.routedecorador de Flask para asignar la ruta URL /a esa     función:
+```
+@app.route("/")
+def home():
+    return "Hello, Flask!"
+```
+
+4.  Guarde el app.pyarchivo ( Ctrl+S ).
+
+5.  En la Terminal integrada, ejecute la aplicación ingresando python -m flask run, que ejecuta el servidor de desarrollo de Flask. El servidor de desarrollo busca         app.pypor defecto. Cuando ejecuta Flask, debería ver un resultado similar al siguiente:
 
