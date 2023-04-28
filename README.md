@@ -69,4 +69,31 @@ Además, si desea ejecutar el servidor de desarrollo en una dirección IP o puer
 
 ![](https://github.com/zazi479/Flask-Python/blob/2261989c997423bbc0f7ed06a2c1ba6f95c7c9dd/foto7.png)
 
+8.  Detenga la aplicación usando Ctrl+C en la terminal.
 
+
+# Ejecute la aplicación en el depurador
+
+La depuración le brinda la oportunidad de pausar un programa en ejecución en una línea de código en particular. Cuando un programa está en pausa, puede examinar las variables, ejecutar código en el panel de la consola de depuración y aprovechar las funciones descritas en Depuración . La ejecución del depurador también guarda automáticamente los archivos modificados antes de que comience la sesión de depuración.
+
+1.  Reemplace el contenido de app.pycon el siguiente código, que agrega una segunda ruta y función que puede recorrer paso a paso en el depurador:
+
+![](https://github.com/zazi479/Flask-Python/blob/9f93e1cc82692fe733b4cb0bcffd98b86540a70f/foto8.png)
+
+El decorador utilizado para la nueva ruta URL, /hello/<name>define un punto final /hola/ que puede aceptar cualquier valor adicional. El identificador dentro <y >en la ruta define una variable que se pasa a la función y se puede usar en su código.
+
+Las rutas URL distinguen entre mayúsculas y minúsculas. Por ejemplo, la ruta /hello/<name>es distinta de /Hello/<name>. Si desea que la misma función maneje ambos, use decoradores para cada variante.
+    
+2.  Establezca un punto de interrupción en la primera línea de código de la hello_therefunción ( now = datetime.now()) realizando cualquiera de las siguientes             acciones:
+    
+    -   Con el cursor en esa línea, presione F9.
+    -   Haga clic directamente en el margen a la izquierda del número de línea (aparece un punto rojo desvaído al pasar el cursor por allí).
+    
+        El punto de interrupción aparece como un punto rojo en el margen izquierdo:
+    
+    ![](https://github.com/zazi479/Flask-Python/blob/9faad195566ea5a7436044c7e88314630cf5cead/foto9.png)
+    
+    3.  Cambie a la vista Ejecutar y depurar en VS Code (usando la barra de actividad del lado izquierdo o Ctrl+Shift+D ). Es posible que vea el mensaje "Para                 personalizar Ejecutar y Depurar, cree un archivo launch.json". Esto significa que aún no tiene un launch.jsonarchivo que contenga configuraciones de                   depuración. VS Code puede crearlo por usted si hace clic en el vínculo Crear un archivo launch.json :
+    
+    ![](https://github.com/zazi479/Flask-Python/blob/af0a3ba0aac873b0858ea0dbe6fc2fd0bf420647/foto10.png)
+    
