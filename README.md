@@ -97,3 +97,12 @@ Las rutas URL distinguen entre mayúsculas y minúsculas. Por ejemplo, la ruta /
     
   ![](https://github.com/zazi479/Flask-Python/blob/af0a3ba0aac873b0858ea0dbe6fc2fd0bf420647/foto10.png)
 
+4.  Debe de aparecer el archivo con este contenido:
+    
+![](https://github.com/zazi479/Flask-Python/blob/03d5197dd281f62f7ea12180b1a473bc51853304/foto11.png)
+    
+5.  Guardar launch.json( Ctrl+S ). En la lista desplegable de configuración de depuración, seleccione Python: Configuración de matraz.
+
+    ![](![image](https://user-images.githubusercontent.com/114684585/235234697-50b65ce3-cb9d-425f-85b1-c24dad5199d1.png)
+    
+    
