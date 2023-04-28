@@ -181,3 +181,22 @@ varias páginas para la aplicación, cada una de las cuales contiene una barra d
     -   from flask import render_template
  
 4.  También en app.py, modifique la hello_therefunción a usar render_templatepara cargar una plantilla y aplicar los valores con nombre (y agregue una ruta para            reconocer el caso sin nombre). render_templateasume que el primer argumento es relativo a la templatescarpeta. Por lo general, los desarrolladores nombran las          plantillas de la misma manera que las funciones que las usan, pero no se requieren nombres coincidentes porque siempre se hace referencia al nombre de archivo          exacto en su código.
+
+```
+    @app.route("/hello/")
+@app.route("/hello/<name>")
+def hello_there(name = None):
+    return render_template(
+        "hello_there.html",
+        name=name,
+        date=datetime.now()
+    )
+```
+    
+5.  Inicie el programa (dentro o fuera del depurador, usando Ctrl+F5 ), navegue a una URL /hola/nombre y observe los resultados.
+
+6.  También intente navegar a una URL / hola / nombre usando un nombre como <a%20value%20that%20could%20be%20HTML>para ver el escape automático de Flask en el trabajo.     El valor de "nombre" se muestra como texto sin formato en el navegador en lugar de representar un elemento real.
+    
+    
+    
+    
