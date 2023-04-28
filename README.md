@@ -198,5 +198,6 @@ def hello_there(name = None):
 6.  También intente navegar a una URL / hola / nombre usando un nombre como <a%20value%20that%20could%20be%20HTML>para ver el escape automático de Flask en el trabajo.     El valor de "nombre" se muestra como texto sin formato en el navegador en lugar de representar un elemento real.
     
     
+    ![](https://github.com/zazi479/Flask-Python/blob/292e49be5972dd49f7290ae0aee23375c5a2e8e9/fotos%20flask/foto%2015.png)
     
-    
+ 
