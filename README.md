@@ -226,7 +226,7 @@ El segundo tipo son aquellos que desea abordar en el código, como cuando desea 
  
 3.  En templates/hello_there.html, agregue la siguiente línea antes de la </head>etiqueta, lo que crea una referencia a la hoja de estilo.3.    
  
-    ```
+```
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
    
 ```
