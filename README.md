@@ -35,7 +35,8 @@ En VS Code, abra la Paleta de comandos ( Ver > Paleta de comandos o ( Ctrl+Shift
 python -m pip install flask
 ```
 
-    ![](https://github.com/zazi479/Flask-Python/blob/a013533501f504b6faebdb5212853517956b0626/foto3.png)
+
+ ![](https://github.com/zazi479/Flask-Python/blob/a013533501f504b6faebdb5212853517956b0626/foto3.png)
 
 Ahora tiene un entorno autónomo listo para escribir código Flask. VS Code activa el entorno automáticamente cuando usa Terminal: Create New Terminal . Si abre un símbolo del sistema o terminal independiente, active el entorno ejecutando source .venv/bin/activate(Linux/macOS) o .venv\Scripts\Activate.ps1(Windows). Sabrá que el entorno está activado cuando el símbolo del sistema muestra (.venv) al principio.
 
@@ -67,7 +68,7 @@ Además, si desea ejecutar el servidor de desarrollo en una dirección IP o puer
 
 7.  Observe que cuando visita una URL como /, aparece un mensaje en la terminal de depuración que muestra la solicitud HTTP:
 
-    ![](https://github.com/zazi479/Flask-Python/blob/2261989c997423bbc0f7ed06a2c1ba6f95c7c9dd/foto7.png)
+![](https://github.com/zazi479/Flask-Python/blob/2261989c997423bbc0f7ed06a2c1ba6f95c7c9dd/foto7.png)
 
 8.  Detenga la aplicación usando Ctrl+C en la terminal.
 
