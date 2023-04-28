@@ -203,7 +203,7 @@ def hello_there(name = None):
     
 # Servir archivos estáticos
 
-    Los archivos estáticos son de dos tipos. Primero están aquellos archivos como hojas de estilo a los que una plantilla de página puede hacer referencia directamente. Dichos archivos pueden vivir en cualquier carpeta de la aplicación, pero comúnmente se colocan dentro de una staticcarpeta.
+Los archivos estáticos son de dos tipos. Primero están aquellos archivos como hojas de estilo a los que una plantilla de página puede hacer referencia directamente. Dichos archivos pueden vivir en cualquier carpeta de la aplicación, pero comúnmente se colocan dentro de una staticcarpeta.
 
 El segundo tipo son aquellos que desea abordar en el código, como cuando desea implementar un punto final de API que devuelve un archivo estático. Para este propósito, el objeto Flask contiene un método integrado, send_static_fileque genera una respuesta con un archivo estático contenido dentro de la staticcarpeta de la aplicación.
     
