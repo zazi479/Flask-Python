@@ -147,7 +147,8 @@ Una práctica mucho mejor es mantener HTML fuera de su código por completo medi
     
 Una plantilla es un archivo HTML que contiene marcadores de posición para los valores que proporciona el código en tiempo de ejecución. El motor de plantillas se encarga de hacer las sustituciones al renderizar la página. El código, por lo tanto, se ocupa solo de los valores de los datos y la plantilla se ocupa solo del marcado.
     
-    En esta sección, crea una sola página utilizando una plantilla. En las secciones siguientes, configurará la aplicación para servir archivos estáticos y luego creará varias páginas para la aplicación, cada una de las cuales contiene una barra de navegación a partir de una plantilla base.
+En esta sección, crea una sola página utilizando una plantilla. En las secciones siguientes, configurará la aplicación para servir archivos estáticos y luego creara 
+varias páginas para la aplicación, cada una de las cuales contiene una barra de navegación a partir de una plantilla base.
 
 1.  Dentro de la hello_flaskcarpeta, cree una carpeta llamada templates, que es donde Flask busca las plantillas de forma predeterminada.
 
@@ -156,7 +157,7 @@ Una plantilla es un archivo HTML que contiene marcadores de posición para los v
     
 ![](https://github.com/zazi479/Flask-Python/blob/b7b63da6e1e8ebcbf0e15cf576417550df3507e2/foto14.png)
     
-    ```
+```
     <!DOCTYPE html>
 <html>
     <head>
@@ -172,5 +173,5 @@ Una plantilla es un archivo HTML que contiene marcadores de posición para los v
     </body>
 </html>
     
-    ```
+```
     
