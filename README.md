@@ -270,3 +270,14 @@ def get_data():
 ![](https://github.com/zazi479/Flask-Python/blob/317c17fc881ad9a98dee4d89bccef297381f8f71/fotos%20flask/foto18.png)
     
  3. Ejecute la aplicación y navegue hasta el punto final /api/data para ver si se devuelve el archivo estático. Detenga la aplicación cuando haya terminado.
+    
+    Al introducir la URL "http://127.0.0.1:5000/api/data"  nos apaerece el siguiente mensaje:
+    
+ ![](https://github.com/zazi479/Flask-Python/blob/f0f4a1b38b601699196dff193bd0c44722554c2f/fotos%20flask/foto19.png)
+    
+    
+    
+#   Crear una plantilla y estilos de página base
+    
+    
+    
