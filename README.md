@@ -200,4 +200,44 @@ def hello_there(name = None):
     
     ![](https://github.com/zazi479/Flask-Python/blob/292e49be5972dd49f7290ae0aee23375c5a2e8e9/fotos%20flask/foto%2015.png)
     
- 
+# Servir archivos estáticos
+
+    Los archivos estáticos son de dos tipos. Primero están aquellos archivos como hojas de estilo a los que una plantilla de página puede hacer referencia directamente. Dichos archivos pueden vivir en cualquier carpeta de la aplicación, pero comúnmente se colocan dentro de una staticcarpeta.
+
+El segundo tipo son aquellos que desea abordar en el código, como cuando desea implementar un punto final de API que devuelve un archivo estático. Para este propósito, el objeto Flask contiene un método integrado, send_static_fileque genera una respuesta con un archivo estático contenido dentro de la staticcarpeta de la aplicación.
+    
+    
+# Hacer referencia a archivos estáticos en una plantilla
+    
+1.  En la hello_flaskcarpeta, cree una carpeta llamada static.
+    
+![](https://github.com/zazi479/Flask-Python/blob/9b9c9c6554c84b0db333bc887628f4280624a858/fotos%20flask/foto16.png)
+    
+2.  Dentro de la staticcarpeta, cree un archivo site.csscon el siguiente contenido. Después de ingresar este código, observe también el resaltado de sintaxis que           proporciona VS Code para los archivos CSS, incluida una vista previa en color:
+    
+    ```
+    .message {
+    font-weight: 600;
+    color: blue;
+}
+   ```
+    
+3.  En templates/hello_there.html, agregue la siguiente línea antes de la </head>etiqueta, lo que crea una referencia a la hoja de estilo.3.    
+    
+    ```
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
+    ```
+    
+4.  También en templates/hello_there.html, reemplace el <body>elemento de contenido con el siguiente marcado que usa el messageestilo en lugar de una <strong>etiqueta      (y también muestra un mensaje si solo usa un hola/URL sin nombre):
+    
+   ```
+    {%if name %}
+    <span class="message">Hello there, {{ name }}!</span> It's {{ date.strftime("%A, %d %B, %Y at %X") }}.
+{% else %}
+    <span class="message">What's your name? Provide it after /hello/ in the URL.</span>
+{% endif %}
+    ```
+    
+ 5. Ejecute la aplicación, navegue a una URL /hola/nombre y observe que el mensaje se muestra en azul. Detenga la aplicación cuando haya terminado
+    
+    
