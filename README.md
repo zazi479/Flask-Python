@@ -110,7 +110,28 @@ Las rutas URL distinguen entre mayúsculas y minúsculas. Por ejemplo, la ruta /
     
    ![image](https://user-images.githubusercontent.com/114684585/235235506-d272a2d8-3ff4-4ffc-95cc-7307e906fa5e.png)
     
-    En mi caso no funciona.
+ En mi caso no funciona.
+    
+6.  Una barra de herramientas de depuración (que se muestra a continuación) también aparece en VS Code que contiene comandos en el siguiente orden: Pausa (o Continuar,     F5 ), Pasar por encima ( F10 ), Entrar ( F11 ), Salir ( Shift+F11 ), Reiniciar ( Ctrl +Mayús+F5 ) y Detener ( Mayús+F5 ). Consulte Depuración de VS Code para           obtener una descripción de cada comando.
+
+    ![](https://github.com/zazi479/Flask-Python/blob/f9c0eb17a1a8c6359bb7e3659b1b77852e572293/foto12.png)
+    
+    
+7.  La salida aparece en un terminal de "Consola de depuración de Python". Ctrl+clic en el http://127.0.0.1:5000/enlace en ese terminal para abrir un navegador a esa       URL. En la barra de direcciones del navegador, navegue hasta http://127.0.0.1:5000/hello/VSCode. Antes de que se muestre la página, VS Code detiene el programa en     el punto de interrupción que estableció. La pequeña flecha amarilla en el punto de interrupción indica que es la siguiente línea de código que se ejecutará.
+    
+Mota: es como deberia de aparecer.  
+    
+    ![image](https://user-images.githubusercontent.com/114684585/235235995-c44d8200-952f-4a60-8b65-ef4a6eb49c18.png)
+
+9.  Use Step Over para ejecutar la now = datetime.now()declaración.
+
+10. En el lado izquierdo de la ventana de VS Code, verá un panel Variables que muestra variables locales, como now, así como argumentos, como name. Debajo hay paneles      para Watch , Call Stack y Breakpoints (consulte Depuración de VS Code para obtener más detalles). En la sección Locales , intente expandir diferentes valores.          También puede hacer doble clic en los valores (o usar F2 ) para modificarlos. Sin embargo, cambiar variables como now, puede romper el programa. Los                    desarrolladores suelen hacer cambios solo para corregir los valores cuando el código no produjo el valor correcto para empezar.  
+    
+    
+![image](https://user-images.githubusercontent.com/114684585/235236306-61989363-17e8-4b2c-8b22-a4e309b21073.png)
+    
+    
+11. Avance por algunas líneas más de código, si lo desea, luego seleccione Continuar ( F5 ) para dejar que el programa se ejecute. La ventana del navegador muestra el      resultado:
     
    
 
