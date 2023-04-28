@@ -93,7 +93,7 @@ Las rutas URL distinguen entre mayúsculas y minúsculas. Por ejemplo, la ruta /
     
     ![](https://github.com/zazi479/Flask-Python/blob/9faad195566ea5a7436044c7e88314630cf5cead/foto9.png)
     
- 3.  Cambie a la vista Ejecutar y depurar en VS Code (usando la barra de actividad del lado izquierdo o Ctrl+Shift+D ). Es posible que vea el mensaje "Para                 personalizar Ejecutar y Depurar, cree un archivo launch.json". Esto significa que aún no tiene un launch.jsonarchivo que contenga configuraciones de                   depuración. VS Code puede crearlo por usted si hace clic en el vínculo Crear un archivo launch.json :
+ 3.  Cambie a la vista Ejecutar y depurar en VS Code (usando la barra de actividad del lado izquierdo o Ctrl+Shift+D ). Es posible que vea el mensaje "Para                 personalizar Ejecutar y Depurar, cree un archivo launch.json". Esto significa que aún no tiene un launch.jsonarchivo que contenga configuraciones de                   depuración. VS Code puede crearlo por usted si hace clic en el vínculo Crear un archivo launch.json : .
     
     ![](https://github.com/zazi479/Flask-Python/blob/af0a3ba0aac873b0858ea0dbe6fc2fd0bf420647/foto10.png)
     
