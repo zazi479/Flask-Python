@@ -25,3 +25,8 @@ En VS Code, abra la Paleta de comandos ( Ver > Paleta de comandos o ( Ctrl+Shift
 
 ![](https://github.com/zazi479/Flask-Python/blob/e139a3b441d5f3641006c4e0f014fea0abd64fea/foto1.png)
 
+4.Una vez completada la creación de su entorno virtual, ejecute Terminal: Crear nueva terminal ( Ctrl+Shift+` )) desde la Paleta de comandos, que crea una terminal y activa automáticamente el entorno virtual ejecutando su secuencia de comandos de activación.
+
+**Nota** : en Windows, si su tipo de terminal predeterminado es PowerShell, es posible que vea un error que indica que no puede ejecutar enable.ps1 porque la ejecución de secuencias de comandos está deshabilitada en el sistema. El error proporciona un enlace para obtener información sobre cómo permitir scripts. De lo contrario, use Terminal: seleccione Shell predeterminado para establecer "Símbolo del sistema" o "Git Bash" como predeterminado.
+
+
