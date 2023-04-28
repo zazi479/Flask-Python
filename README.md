@@ -245,5 +245,19 @@ El segundo tipo son aquellos que desea abordar en el código, como cuando desea 
  5. Ejecute la aplicación, navegue a una URL /hola/nombre y observe que el mensaje se muestra en azul. Detenga la aplicación cuando haya terminado
     
     
-
+![](https://github.com/zazi479/Flask-Python/blob/2903c017c1b77da3ab7b90ed103cfbf447091dd0/fotos%20flask/foto17.png)
+    
+ #  Servir un archivo estático desde el código
+    
+  1.  En la staticcarpeta, cree un archivo de datos JSON data.jsoncon el siguiente contenido (que son datos de muestra sin sentido):
+    
+```
+    {
+  "01": {
+    "note": "This data is very simple because we're demonstrating only the mechanism."
+  }
+}
+```
+    
+  2.  En app.py, agregue una función con la ruta /api/data que devuelva el archivo de datos estáticos usando el send_static_filemétodo:  
 
