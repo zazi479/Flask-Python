@@ -23,4 +23,4 @@ Abra esta carpeta en VS Code navegando a la carpeta en un terminal y ejecutando 
 
 En VS Code, abra la Paleta de comandos ( Ver > Paleta de comandos o ( Ctrl+Shift+P )). Luego seleccione el comando Python: Create Environment para crear un entorno virtual en su espacio de trabajo. Seleccione venvy luego el entorno de Python que desea usar para crearlo.
 
-!()[https://github.com/zazi479/Flask-Python/blob/e139a3b441d5f3641006c4e0f014fea0abd64fea/foto1.png]
+!([https://github.com/zazi479/Flask-Python/blob/e139a3b441d5f3641006c4e0f014fea0abd64fea/foto1.png)[]
