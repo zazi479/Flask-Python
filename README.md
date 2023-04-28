@@ -268,3 +268,5 @@ def get_data():
 ```
 
 ![](https://github.com/zazi479/Flask-Python/blob/317c17fc881ad9a98dee4d89bccef297381f8f71/fotos%20flask/foto18.png)
+    
+ 3. Ejecute la aplicación y navegue hasta el punto final /api/data para ver si se devuelve el archivo estático. Detenga la aplicación cuando haya terminado.
