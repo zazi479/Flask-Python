@@ -260,4 +260,11 @@ El segundo tipo son aquellos que desea abordar en el código, como cuando desea 
 ```
     
   2.  En app.py, agregue una función con la ruta /api/data que devuelva el archivo de datos estáticos usando el send_static_filemétodo:  
+    
+```
+    @app.route("/api/data")
+def get_data():
+    return app.send_static_file("data.json")
+```
 
+![](https://github.com/zazi479/Flask-Python/blob/317c17fc881ad9a98dee4d89bccef297381f8f71/fotos%20flask/foto18.png)
