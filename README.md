@@ -280,4 +280,46 @@ def get_data():
 #   Crear una plantilla y estilos de página base
     
     
+Una plantilla de página base en Flask contiene todas las partes compartidas de un conjunto de páginas, incluidas las referencias a archivos CSS, archivos de script, etc. Las plantillas base también definen una o más etiquetas de bloque que se espera que anulen otras plantillas que amplían la base. Una etiqueta de bloque está delineada por {% block <name> %}y {% endblock %}en la plantilla base y las plantillas extendidas.
+
+Los siguientes pasos demuestran cómo crear una plantilla base.
+
+1.  En la templates carpeta, cree un archivo llamado layout.htmlcon el contenido a continuación, que contiene bloques llamados "título" y "contenido". Como puede ver,     el marcado define una estructura de barra de navegación simple con enlaces a las páginas Inicio, Acerca de y Contacto, que creará en una sección posterior. Cada       enlace vuelve a utilizar la etiqueta de Flask url_forpara generar un enlace en tiempo de ejecución para la ruta coincidente.
     
+![](https://github.com/zazi479/Flask-Python/blob/d54009d0c7f6fc42c32b7f0d17b8f62c6169450f/fotos%20flask/foto20.png)
+    
+    
+2.  Agregue los siguientes estilos a static/site.css, debajo del estilo de "mensaje" existente y guarde el archivo. Tenga en cuenta que este tutorial no intenta           demostrar un diseño receptivo; estos estilos simplemente generan un resultado razonablemente interesante.
+    
+    ![](https://github.com/zazi479/Flask-Python/blob/0db5417f7bab437b05cfe36c761045f58b10ae4e/fotos%20flask/foto21.png)
+    
+Puede ejecutar la aplicación en este punto, pero debido a que no ha utilizado la plantilla base en ninguna parte y no ha cambiado ningún archivo de código, el resultado es el mismo que en el paso anterior. Complete las secciones restantes para ver el efecto final.
+    
+    
+    
+#   Crear un fragmento de código
+    
+ Debido a que las tres páginas que crea en la siguiente sección se extienden layout.html, se ahorra tiempo al crear un fragmento de código para inicializar un nuevo archivo de plantilla con la referencia adecuada a la plantilla base. Un fragmento de código proporciona una pieza coherente de código de una sola fuente, lo que evita errores que pueden aparecer cuando se usa copiar y pegar del código existente.
+
+-   En VS Code, seleccione Archivo ( Code en macOS) > Preferencias > Configurar fragmentos de usuario .
+
+-   En la lista que aparece, seleccione html . La opción puede aparecer como "html.json" en la sección Fragmentos existentes de la lista si ha creado fragmentos            anteriormente.
+
+-   Después de que se abra VS Code html.json, agregue la siguiente entrada dentro de las llaves existentes (los comentarios explicativos, que no se muestran aquí,          describen detalles tales como cómo la $0línea indica dónde coloca el cursor VS Code después de insertar un fragmento):
+    
+```
+   "Flask Tutorial: template extending layout.html": {
+    "prefix": "flextlayout",
+    "body": [
+        "{% extends \"layout.html\" %}",
+        "{% block title %}",
+        "$0",
+        "{% endblock %}",
+        "{% block content %}",
+        "{% endblock %}"
+    ],
+
+    "description": "Boilerplate template that extends layout.html"
+},
+  
+```
