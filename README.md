@@ -137,7 +137,40 @@ Mota: es como deberia de aparecer.
  ![](https://github.com/zazi479/Flask-Python/blob/d08ce91659dbb0bfc15a897be708ed192a999140/foto13.png)
     
     
+#   Usar una plantilla para representar una página
     
-   
+La aplicación que ha creado hasta ahora en este tutorial genera solo páginas web de texto sin formato a partir del código de Python. Aunque es posible generar HTML directamente en el código, los desarrolladores evitan esta práctica porque abre la aplicación a ataques de secuencias de comandos entre sitios (XSS) .
+    
+    
+Una práctica mucho mejor es mantener HTML fuera de su código por completo mediante el uso de plantillas , de modo que su código se preocupe solo por los valores de los datos y no por la representación.
+    
+    
+Una plantilla es un archivo HTML que contiene marcadores de posición para los valores que proporciona el código en tiempo de ejecución. El motor de plantillas se encarga de hacer las sustituciones al renderizar la página. El código, por lo tanto, se ocupa solo de los valores de los datos y la plantilla se ocupa solo del marcado.
+    
+    En esta sección, crea una sola página utilizando una plantilla. En las secciones siguientes, configurará la aplicación para servir archivos estáticos y luego creará varias páginas para la aplicación, cada una de las cuales contiene una barra de navegación a partir de una plantilla base.
 
+1.  Dentro de la hello_flaskcarpeta, cree una carpeta llamada templates, que es donde Flask busca las plantillas de forma predeterminada.
+
+2.  En la templatescarpeta, cree un archivo llamado hello_there.htmlcon el contenido a continuación. Esta plantilla contiene dos marcadores de posición llamados "nombre" y "fecha", que están delimitados por pares de llaves {{y }}. Como puede ver, también puede incluir código de formato en la plantilla directamente:
+
+    
+![](https://github.com/zazi479/Flask-Python/blob/b7b63da6e1e8ebcbf0e15cf576417550df3507e2/foto14.png)
+    
+    ```
+    <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Hello, Flask</title>
+    </head>
+    <body>
+        {%if name %}
+            <strong>Hello there, {{ name }}!</strong> It's {{ date.strftime("%A, %d %B, %Y at %X") }}.
+        {% else %}
+            What's your name? Provide it after /hello/ in the URL.
+        {% endif %}
+    </body>
+</html>
+    
+    ```
     
